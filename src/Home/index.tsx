@@ -11,7 +11,7 @@ import {
 
 import { styles } from "./style"
 
-import { Participant } from "../Components"
+import { Participant } from "../components"
 
 export default function Home() {
   const [participant, setPaticipant] = useState<string[]>([])
