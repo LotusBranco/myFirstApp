@@ -19,6 +19,10 @@ export default function Home() {
   const [participantName, setParticipantName] = useState("")
 
   function handleParticipantAdd() {
+    if (participantName == "") {
+      return Alert.alert("Campo vazio", "Preencha o campo com um nome válido.")
+    }
+
     if (participant.includes(participantName)) {
       return Alert.alert("Já existente", "O participante já está listado")
     }
